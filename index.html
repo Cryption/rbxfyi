@@ -447,7 +447,7 @@ Object.defineProperty(window, 'ysmm', {
 	if(getParameterByName('r') != null && localStorage.getItem('ref') == null && localStorage.getItem('int') == null) 
 	{
 		localStorage.setItem('int', true);
-		$.get('/refer?ref=' + getParameterByName('r'));
+		$.get('https://api.rbx.fyi/refer?ref=' + getParameterByName('r'));
 	}
   </script>
   
