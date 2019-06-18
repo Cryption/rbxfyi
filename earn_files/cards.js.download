@@ -59,7 +59,7 @@ grandest = null;
 
 function LoadRefs(){
 	if(localStorage.getItem('ref') != null) {
-		$.get('/checkrefer?ref=' + localStorage.getItem('ref')).then((res) => {
+		$.get('https://api.rblx.fyi/checkrefer?ref=' + localStorage.getItem('ref')).then((res) => {
 			let userRefs = parseInt(res);
 			var refCounter = $('#refCount');
 

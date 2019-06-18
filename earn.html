@@ -369,13 +369,13 @@ Object.defineProperty(window, 'ysmm', {
 											$('.a2a_kit').attr('data-a2a-url', url);
 											$('#refLink').val(url);
 											
-											$.get('/checkrefer?ref=' + localStorage.getItem('ref')).then((res) => {
+											$.get('https://api.rblx.fyi/checkrefer?ref=' + localStorage.getItem('ref')).then((res) => {
 												$('#refCount').text(res + ' / 5');
 											});
 										}
 										
 										if(localStorage.getItem('ref') == null) {
-											$.get('/getrefer').then((res) => {
+											$.get('https://api.rblx.fyi/getrefer').then((res) => {
 												window.localStorage.setItem('ref', res);
 												setRef(res);
 											});
