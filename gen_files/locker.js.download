@@ -47,7 +47,7 @@ function CPBContentLocker() {
     }
 
 }
-CPBContentLocker.prototype = {
+
 
 function CPABuildLock() {
     CPABUILDContentLocker.openLocker();
