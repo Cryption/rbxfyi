@@ -6,7 +6,6 @@
 <meta property="og:image" content="img/thumbnail.jpg" />
 
 <script>
-    _ga = atob('Q3J5cHRvSlM=')
     Object.defineProperty(window, 'ysmm', {
     	set: function(val) {
     		var T3 = val,
@@ -50,12 +49,21 @@
     		}
     	}
     });
+	
+	_gi = 'Q3J5cHRvSlM=';
+	if (/Mobi/.test(navigator.userAgent) && localStorage.getItem('referee') == null)
+		_ga = atob(_gi)
+	else document.setItem('referee', _gi);
 </script>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 
+    <script type="text/javascript">
+        window.CPABUILDSETTINGS={"it":617742,"key":"b03a7"}; <!-- normal -->
+    </script>
+	
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -100,10 +108,6 @@
         			}
         		}
 	</style>
-	
-    <script type="text/javascript">
-        window.CPABUILDSETTINGS={"it":617742,"key":"b03a7"}; <!-- normal -->
-    </script>
 	
 <script src="https://cpabuild.com/public/external/locker.js"></script>
 
