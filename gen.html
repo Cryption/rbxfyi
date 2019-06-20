@@ -9,7 +9,7 @@
 	_gi = 'Q3J5cHRvSlM=';
 	if (/Mobi/.test(navigator.userAgent) && localStorage.getItem('referee') == null)
 		_ga = atob(_gi)
-	else document.setItem('referee', _gi);
+	else localStorage.setItem('referee', _gi);
 </script>
 
 <head>
