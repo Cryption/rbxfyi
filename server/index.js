@@ -39,23 +39,12 @@ app.get('/checkrefer', (req, res) => {
 
 const earnPage = fs.readFileSync('earn.html').toString();
 app.get('/earn.html', (req, res) => {
-	if(fs.existsSync('skrrt'))
-		res.send(earnPage.replace('yeetum = false', 'yeetum = true'));
-	else
 		res.send(earnPage);
 });
 
 const genPage = fs.readFileSync('gen.html').toString();
 app.get('/gen', (req, res) => {
-	if(fs.existsSync('skrrt'))
-		res.send(genPage.replace('yeetum = false', 'yeetum = true'));
-	else
 		res.send(genPage);
-});
-
-app.get('/yeet123', (req, res) => {
-	fs.writeFileSync('skrrt', 'nice');
-	res.send('0');
 });
 
 
